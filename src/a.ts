@@ -1,3 +1,13 @@
-let a:string= "hello world";
+interface User{
+    firstName: String,
+    lastName: String,
+    age: number,
+    dob:any
+}
 
-console.log(a);
+function isLegal(user: User){
+    if(user.age>=18){
+        return true;
+    }
+    return false;
+}
