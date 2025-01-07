@@ -1,3 +1,7 @@
-const x:number=1;
+function nestedfunc(fn: ()=> void) {
+    setTimeout(fn,1000);
+};
 
-console.log(x);
+nestedfunc(()=>{
+ console.log("hi there");
+})
