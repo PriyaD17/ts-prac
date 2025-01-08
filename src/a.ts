@@ -1,25 +1,8 @@
-enum Direction{
-    up,
-    down,
-    left,
-    right
-}
-enum Disha{
-    up="upar",
-    down="neeche",
-    left="baain",
-    right="daain"
-}
-enum Direction2{
-    up=17,
-    down=21,
-    left,
-    right
+function generics<T>(arg:T){
+    return arg;
 }
 
-console.log(Direction.down);
-console.log(Direction.left);
-console.log(Disha.down);
-console.log(Direction2.down);
-console.log(Direction2.left);
+let x1= generics<number>(17);
+let x2= generics<string>("everyone");
 
+console.log("hello "+ x2.toUpperCase()+" my lucky number is "+ x1);
